@@ -19,7 +19,7 @@
         "styles": ["apps/plugin/remote1/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
-          "path": "apps/plugin/remote1/webpack.config.js"
+          "path": "apps/plugin/remote1/webpack.config.ts"
         }
       },
       "configurations": {
@@ -44,7 +44,7 @@
           ],
           "outputHashing": "all",
           "customWebpackConfig": {
-            "path": "apps/plugin/remote1/webpack.prod.config.js"
+            "path": "apps/plugin/remote1/webpack.config.ts"
           }
         },
         "development": {
@@ -118,7 +118,7 @@
         "deleteOutputPath": false,
         "tsConfig": "apps/plugin/remote1/tsconfig.server.json",
         "customWebpackConfig": {
-          "path": "apps/plugin/remote1/webpack.server.config.js"
+          "path": "apps/plugin/remote1/webpack.config.ts"
         }
       },
       "configurations": {

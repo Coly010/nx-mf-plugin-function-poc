@@ -19,7 +19,7 @@
         "styles": ["apps/plugin/host1/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
-          "path": "apps/plugin/host1/webpack.config.js"
+          "path": "apps/plugin/host1/webpack.config.ts"
         }
       },
       "configurations": {
@@ -44,7 +44,7 @@
           ],
           "outputHashing": "all",
           "customWebpackConfig": {
-            "path": "apps/plugin/host1/webpack.prod.config.js"
+            "path": "apps/plugin/host1/webpack.config.ts"
           }
         },
         "development": {
@@ -102,7 +102,7 @@
         "tsConfig": "apps/plugin/host1/tsconfig.server.json",
         "deleteOutputPath": false,
         "customWebpackConfig": {
-          "path": "apps/plugin/host1/webpack.server.config.js"
+          "path": "apps/plugin/host1/webpack.config.ts"
         }
       },
       "configurations": {

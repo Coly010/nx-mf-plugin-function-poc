@@ -134,7 +134,8 @@ function withModuleFederation(options) {
         const mappedRemotes = !options.remotes || options.remotes.length === 0
             ? {}
             : mapRemotes(options.remotes, options.isServer);
-        return (config) => ({
+        return (config) => {
+          return {
               ...(config ?? {}),
               target: options.isServer ? false : 'web',
               output: {
@@ -172,7 +173,7 @@ function withModuleFederation(options) {
                     }),
                     sharedLibraries.getReplacementPlugin(),
                 ]
-        });
+        }};
     });
 }
 exports.withModuleFederation = withModuleFederation;

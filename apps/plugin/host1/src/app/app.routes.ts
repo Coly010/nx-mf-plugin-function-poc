@@ -7,13 +7,13 @@ export const appRoutes: Route[] = [
     component: NxWelcomeComponent,
   },
   {
-    path: 'remote2',
+    path: 'plugin-remote2',
     loadChildren: () =>
-      import('remote2/Module').then((m) => m.RemoteEntryModule),
+      import('plugin-remote2/Module').then((m) => m.RemoteEntryModule),
   },
   {
-    path: 'remote1',
+    path: 'plugin-remote1',
     loadChildren: () =>
-      import('remote1/Module').then((m) => m.RemoteEntryModule),
+      import('plugin-remote1/Module').then((m) => m.RemoteEntryModule),
   },
 ];
